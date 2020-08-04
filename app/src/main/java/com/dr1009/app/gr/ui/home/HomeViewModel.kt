@@ -1,10 +1,12 @@
 package com.dr1009.app.gr.ui.home
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import androidx.hilt.Assisted
+import androidx.hilt.lifecycle.ViewModelInject
+import androidx.lifecycle.*
 
-class HomeViewModel : ViewModel() {
+class HomeViewModel @ViewModelInject constructor(
+    @Assisted private val savedStateHandle: SavedStateHandle
+) : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragment"
