@@ -13,8 +13,8 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.dr1009.app.gr.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:name="com.dr1009.app.gr.ui.retrofit.RetrofitFragment"
+        android:label="@string/title_retrofit"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
