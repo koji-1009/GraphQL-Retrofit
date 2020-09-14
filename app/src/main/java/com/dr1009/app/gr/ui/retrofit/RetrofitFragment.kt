@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.observe
 import com.dr1009.app.gr.R
 import com.dr1009.app.gr.databinding.FragmentDashboardBinding
 import dagger.hilt.android.AndroidEntryPoint
