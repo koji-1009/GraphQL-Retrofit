@@ -1,14 +1,6 @@
-query Repositories(
-  $repositoriesCount: Int!
-  $orderBy: RepositoryOrderField!
-  $orderDirection: OrderDirection!
-) {
+query Repositories {
   viewer {
-    repositories(
-      first: $repositoriesCount
-      orderBy: { field: $orderBy, direction: $orderDirection }
-      ownerAffiliations: [OWNER]
-    ) {
+    repositories(first: 20) {
       nodes {
         ...RepositoryFragment
       }
@@ -19,5 +11,7 @@ query Repositories(
 fragment RepositoryFragment on Repository {
   id
   name
+  url
   description
+  createdAt
 }
